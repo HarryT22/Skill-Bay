@@ -1,0 +1,23 @@
+/* Autor: Harry Thünte */
+h1 { color: #111; text-align: center; }
+
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  color: #333;
+  font: 100% / normal sans-serif;
+}
+
+
+form {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flexbox;
+  gap: 2rem;
+}
+
+select {
+  width: 100%;
+  padding:10px;
+  border: radius 20px;
+}

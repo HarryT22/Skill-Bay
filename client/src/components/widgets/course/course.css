@@ -1,0 +1,28 @@
+/* Autor: Simon Guyon */
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background-color: #f9f9f9;
+}
+
+:host:hover {
+  transform: scale(1.05);
+  border-color: #999;
+}
+
+:host ::slotted([slot='coursename']) {
+  font-size: 1.2em;
+  font-weight: Bold;
+  cursor: pointer;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}

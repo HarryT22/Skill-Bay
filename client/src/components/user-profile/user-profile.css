@@ -1,0 +1,59 @@
+/* Autor: Annika Junge */
+
+@import url(../widgets/sidebar/sidebar.css);
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group .type-info {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.form-group .image-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.form-group .image-container img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 40%;
+}
+
+.interest {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+  background-color: #80bd9e;
+}
+.skill {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+  background-color: #80bd9e;
+}
+.image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}

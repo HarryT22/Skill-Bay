@@ -1,0 +1,43 @@
+/* Autor: Annika Junge */
+@import url(../widgets/sidebar/sidebar.css);
+.friends-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friends-list li a {
+  border: 1px solid black;
+  margin-top: -1px;
+  background-color: gray;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.friend-item {
+  border: 1px solid black;
+  flex-basis: 33%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.friend-item:hover {
+  background-color: #80bd9e;
+}
+
+.friend-item img {
+  max-width: 100%;
+  max-height: 50px;
+}
+.friend-item span {
+  float: right;
+}
+.friend-item {
+  font-size: 1.2em;
+}
+.friend-item span {
+  font-size: 1.2em;
+}

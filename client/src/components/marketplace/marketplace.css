@@ -1,0 +1,48 @@
+/* Autor: Harry Thünte */
+h1 { color: #111; text-align: center; }
+
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  color: #333;
+  font: 100% / normal sans-serif;
+}
+
+
+form {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flexbox;
+  gap: 2rem;
+}
+
+select {
+  width: 100%;
+  padding:10px;
+  border: radius 20px;
+}
+button {
+  padding:10px;
+  border:none;
+  background-color:green;
+  color:#fff;
+  border-radius:5px;
+  width:100%;
+}
+
+.filter-inquirys{margin-top: 5rem;}
+
+.createContract{width:50vh;}
+.createInquiry{width:50vh;}
+.personal{width:50vh;}
+.bookings{width:50vh;}
+.buttonContainer1{
+  display: flex;
+  justify-content: center;
+}
+.buttonContainer2{
+  display: flex;
+  justify-content: center;
+}
+
+

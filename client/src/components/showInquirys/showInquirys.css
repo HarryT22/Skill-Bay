@@ -1,0 +1,16 @@
+/* Autor: Harry Thünte */
+
+h1 {
+    text-decoration:underline ;
+    text-decoration-color: darkgreen;
+}
+div{ padding-bottom: 2rem;}
+button {
+    padding:10px;
+    border:none;
+    background-color:#078a2f;
+    color:#fff;
+    border-radius:5px;
+    width:100%;
+  }
+

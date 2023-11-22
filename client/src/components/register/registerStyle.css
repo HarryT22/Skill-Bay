@@ -1,0 +1,17 @@
+/* Autor: Annika Junge */
+
+.interest {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #80bd9e;
+}
+button[type='button'] {
+  margin-bottom: 20px;
+}

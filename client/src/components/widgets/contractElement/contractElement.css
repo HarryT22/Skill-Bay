@@ -1,0 +1,48 @@
+/* Autor: Harry Thünte */
+
+:host {
+    display: flex;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: solid rgba(0, 0, 0, 0.125) 1px;
+  }
+  
+  :host(:first-of-type) {
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+  }
+  
+  :host(:not(:first-of-type)) {
+    border-top: none;
+  }
+  
+  :host(:last-of-type) {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  
+  :host(:hover) {
+    background-color: #f6f6f6;
+  }
+  
+  slot[name='title']::slotted(*) {
+    flex-grow: 1;
+    display: flex;
+    width: max-content;
+    font-weight:bold;
+  
+  }
+  
+  div{
+    margin-right:10%;
+    width:max-content;
+  }
+  label{
+    font-weight:bold;
+  }
+  
+  @media (max-width:560px){
+    :host {
+      display: block;
+    }
+  }
