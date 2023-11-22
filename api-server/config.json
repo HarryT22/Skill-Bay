@@ -1,0 +1,16 @@
+{
+  "server": { "https": false, "port": 3000 },
+  "db": {
+    "use": "mongodb",
+    "connect": {
+      "user": "myapp",
+      "host": "stud-vm-6671",
+      "database": "myapp",
+      "password": "wifhm",
+      "port": {
+        "mongodb": 27017,
+        "psql": 5432
+      }
+    }
+  }
+}
