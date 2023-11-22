@@ -1,0 +1,202 @@
+/* Autor: Marvin Schulze Berge */
+
+.w3-sidebar {
+  height: auto;
+  width: 25%;
+  max-width: 300px;
+  position: fixed;
+  padding-top: 10px;
+  padding-right: 40px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* This line enables the sliding effect */
+  transform: translateX(-100%); /* This line initially hides the sidebar */
+  text-align: right;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa; 
+  border-radius: 0 0 10px 0;
+}
+
+.w3-sidebar.open {
+  transform: translateX(0);
+}
+
+.w3-sidebar a {
+  display: block;
+  padding: 10px 20px;
+  margin: 12px 2px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;  
+  transition: background-color 0.3s ease, color 0.3s ease;  
+  font-size: 18px;
+  background-color: #d4d4d4;  
+  text-align: center;
+}
+
+#openMenuButton {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  margin-top: 2.5px;
+  left: 0;
+}
+
+#closeMenuButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.w3-sidebar a:hover {
+  background-color: #80bd9e;
+  color: #ffffff;
+}
+
+.w3-sidebar .w3-button {
+  margin-top: 0;
+  padding: 5px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 800px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.bubble-container {
+  height: 620px;
+  overflow: auto;
+  display: flex; /* added this to arrange bubbles in a row */
+  flex-wrap: wrap; /* added this to allow the row to wrap onto the next line if the screen is too narrow */
+  justify-content: space-around; /* added this to give space around each bubble */
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  padding-bottom: 10px;
+  scrollbar-width: none; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.bubble-container::-webkit-scrollbar {
+  display: none;
+}
+
+ .bubble {
+  display: flex; /* added this to center the text in the bubble */
+  justify-content: center; /* added this to center the text in the bubble */
+  align-items: center; /* added this to center the text in the bubble */
+  width: 100px; /* set a width for the bubbles */
+  height: 100px; /* set a height for the bubbles */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%; /* added this to make the bubbles circular */
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s; /* added this to animate the color change on hover */
+  scroll-snap-align: center; /* Snap the bubbles to the center when scrolling stops */
+}
+
+.bubble-color-1 {
+  background-color: #80bd9e;
+}
+
+.bubble-color-2 {
+  background-color: #9e80bd;
+}
+
+.bubble-color-3 {
+  background-color: #bd808e;
+}
+
+.bubble-color-4 {
+  background-color: #809ebd;
+}
+
+.bubble-color-5 {
+  background-color: #bda280;
+}
+
+
+/* Hover Effect and Bubble Description Display for Regular Screens with Mouse */
+@media only screen and (hover: hover) and (pointer: fine) {
+  .bubble:hover {
+    color: #ffffff;
+  }
+
+  .bubble .bubble-description {
+    display: none;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .bubble:hover .bubble-title {
+    display: none;
+  }
+
+  .bubble:hover .bubble-description {
+    text-align: center;
+    display: block;
+  }
+}
+
+/* Hover Effect and Bubble Description Display for Touchscreens */
+@media only screen and (pointer: coarse) {
+  .bubble-description {
+    display: none;
+  }
+}
+
+.bubble .bubble-title {
+  font-size: 14px; /* reduced the font size to fit in the smaller bubble */
+  text-align: center; /* added this to center the text in the bubble */
+  margin-top: 0;
+  border-bottom: none; /* removed the border under the text */
+  padding-bottom: 10px;
+  font-weight: bold;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.interest {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #80bd9e;
+}

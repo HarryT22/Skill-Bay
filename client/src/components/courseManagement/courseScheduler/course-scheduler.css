@@ -1,0 +1,52 @@
+/* Autor: Simon Guyon */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+td:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+@media (max-width: 900px) {
+  table {
+    font-size: 0.8em;
+  }
+
+  th,
+  td {
+    padding: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 0.6em;
+  }
+
+  th,
+  td {
+    padding: 0.6em;
+  }
+}

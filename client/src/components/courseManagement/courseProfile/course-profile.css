@@ -1,0 +1,80 @@
+/* Autor: Simon Guyon */
+:host {
+  display: block;
+}
+
+.display-content {
+  position: column;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.display-content h1,
+.display-content p {
+  font-size: 1em;
+}
+
+.display-content h3 {
+  font-size: 0.8em;
+}
+
+.field-container {
+  background-color: #f0f0f0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.course-button {
+  margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+  .display-content {
+    width: 90%;
+  }
+
+  .display-content h1,
+  .display-content p {
+    font-size: 0.9em;
+  }
+
+  .display-content h3 {
+    font-size: 0.7em;
+  }
+
+  .field-container {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .display-content {
+    width: 95%;
+  }
+
+  .display-content h1,
+  .display-content p {
+    font-size: 0.8em;
+  }
+
+  .display-content h3 {
+    font-size: 0.6em;
+  }
+
+  .field-container {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+}
